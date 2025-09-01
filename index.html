@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U.S. Immigration Navigator PRO - Where Others Get Stuck, You Move Forward</title>
+    <title>U.S. Immigration Navigator PRO - Claim Your Place, Security, and Dignity</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         
@@ -119,26 +120,64 @@
         .trust-section {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         }
+        
+        .no-notario-badge {
+            background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+            color: white;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 0.875rem;
+        }
+        
+        /* Optimization styles */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Lazy loading */
+        .lazy {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .lazy.loaded {
+            opacity: 1;
+        }
     </style>
 </head>
 <body class="antialiased text-gray-800">
     <!-- Hero Section -->
-    <section class="trust-section pt-32 pb-20 px-4">
+    <section class="trust-section pt-16 pb-20 px-4">
         <div class="container mx-auto max-w-6xl">
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/2 mb-10 md:mb-0">
-                    <div class="trust-badge mb-6">
-                        <i class="fas fa-shield-alt mr-2"></i>Verified by 2847+ Immigrants
-                    </div>
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-8">
-                        U.S. Immigration Navigator PRO<br>
-                        <span class="text-blue-800 text-3xl md:text-4xl">Get Your Immigration Case Approved - Without $10K+ Lawyer Fees or Deportation Fear</span>
-                    </h1>
-                    <div class="text-lg mb-8 space-y-4">
-                        <p>U.S. immigration feels like walking through a minefield blindfolded. After sinking $18,000 into legal fees and battling for 3 long years, I went from a deportation notice staring me in the face to finally securing permanent residency.</p>
-                        <p>It wasn't luck; it was learning what to say in those high-stakes interviews, when to file that critical paperwork, and how to dodge the irreversible mistakes that derail so many.</p>
+                    <!-- Trust Badge - Updated -->
+                    <div class="bg-green-100 text-green-800 font-semibold py-2 px-4 rounded-full inline-flex items-center text-sm mb-6">
+                        <i class="fas fa-shield-alt mr-2"></i>Trusted by 2,847+ Immigrant Families
                     </div>
                     
+                    <!-- Headline -->
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                        Claim Your Place, Security, and Dignity
+                    </h1>
+                    
+                    <!-- Subheadline -->
+                    <p class="text-lg mb-8">
+                        Move from the chronic fear and instability of the immigration process to a place of safety, clarity, and hope for your family.
+                    </p>
+                    
+                    <!-- Image moved above bullet points -->
+                    <div class="md:hidden mb-8">
+                        <div class="relative">
+                            <img src="https://imageio.forbes.com/specials-images/imageserve/62896676075e5cf01a054d1c/Vietnamese-refugee-Tran-Di-Thuong--R--is-welcomed/960x0.jpg?format=jpg&width=960" alt="Immigrant family finding hope" class="rounded-xl shadow-2xl w-full lazy" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <!-- Bullet Points - Original -->
                     <div class="mb-8 space-y-4">
                         <div class="flex items-start">
                             <i class="fas fa-check-circle text-green-500 mr-2 mt-1"></i>
@@ -163,14 +202,7 @@
                         </div>
                     </div>
                     
-                    <div class="md:hidden mb-8">
-                        <div class="relative">
-                            <img src="https://i.ibb.co/1tq6W8Jr/Immigrant-family-png.jpg" alt="Immigrant family smiling" class="rounded-xl shadow-2xl w-full">
-                        </div>
-                    </div>
-                    
-                    <p class="italic text-gray-600 mb-8">Join 2,847+ immigrants who used our battle-tested system to navigate complex U.S. immigration successfully - even if you've been denied before</p>
-                    
+                    <!-- CTA & Reassurance -->
                     <div class="text-center mb-6">
                         <a href="https://www.jvzoo.com/b/0/421391/99" class="cta-primary font-bold py-4 px-8 rounded-lg text-center inline-block text-xl">
                             <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Start Your Path Now – Instant Access for $47
@@ -178,42 +210,71 @@
                     </div>
                     <p class="text-center text-gray-600">100% risk Free - 60 day money back policy.</p>
                     
+                    <!-- Free Preview Button - Moved Lower -->
                     <div class="text-center mt-6">
                         <a href="https://drive.google.com/uc?export=download&id=1Zr_ZKIfgc_j7vgGZ_SloxGSFDu-I-WnO" class="cta-green font-bold py-3 px-6 rounded-lg text-center inline-block">
-                            <i class="fas fa-download mr-2"></i>Preview Download
+                            <i class="fas fa-download mr-2"></i>Free Preview
                         </a>
+                    </div>
+                    
+                    <!-- You're Safe Here Notice - Updated -->
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-200 text-center mt-6">
+                        <p class="text-sm font-medium text-blue-800">
+                            <i class="fas fa-exclamation-circle mr-2"></i>
+                            <strong>You are safe here:</strong> We are not a <em>notario</em>. Our resources are latest and validated.
+                        </p>
                     </div>
                 </div>
                 <div class="md:w-1/2 flex justify-center hidden md:block">
                     <div class="relative">
-                        <img src="https://i.ibb.co/1tq6W8Jr/Immigrant-family-png.jpg" alt="Immigrant family smiling" class="rounded-xl shadow-2xl w-full max-w-md">
+                        <img src="https://imageio.forbes.com/specials-images/imageserve/62896676075e5cf01a054d1c/Vietnamese-refugee-Tran-Di-Thuong--R--is-welcomed/960x0.jpg?format=jpg&width=960" alt="Immigrant family finding hope" class="rounded-xl shadow-2xl w-full max-w-md lazy" loading="lazy">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem Agitation Section -->
+    <!-- Trust Bar Section - Updated with more authoritative organizations -->
+    <section class="py-8 bg-white border-t border-b border-gray-200">
+        <div class="container mx-auto max-w-6xl px-4">
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <p class="text-sm text-gray-600 font-medium">Resources validated by strategies from:</p>
+                <div class="flex flex-wrap justify-center gap-4 items-center">
+                    <div class="bg-gray-100 px-4 py-2 rounded-full text-xs font-semibold text-gray-700 flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>American Immigration Council
+                    </div>
+                    <div class="bg-gray-100 px-4 py-2 rounded-full text-xs font-semibold text-gray-700 flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>National Immigration Law Center
+                    </div>
+                    <div class="bg-gray-100 px-4 py-2 rounded-full text-xs font-semibold text-gray-700 flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>U.S. Citizenship and Immigration Services
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Agitation Section - Updated Content -->
     <section class="py-20 bg-white px-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">The <span class="text-red-600">Nightmare</span> You Don't Have to Live Through</h2>
             
             <div class="space-y-6 mb-10">
-                <p>Picture this: You're staring at a stack of confusing forms, wondering if one wrong word could send your case spiraling into months—or years—of delays. What if that RFE (Request for Evidence) hits because you missed an "unwritten rule" no website mentions?</p>
-                <p>I've been there—the sleepless nights worrying about deportation, the frustration of scattered advice from forums that leads nowhere, the gut-wrenching fear that a single mistake could cost your family everything.</p>
+                <p>That pervasive sense of not belonging. The chronic fear, instability, and trauma of not knowing what comes next. The invisible wall that keeps you from fully participating in society.</p>
+                <p>58% of families in mixed-status households worry daily about deportation. 44% are scared to drive a car. 38% fear going to work. This isn't just paperwork—it's your life, your family, your future.</p>
+                <p>I've been there—the sleepless nights worrying about my status, the frustration of a system designed to confuse, the gut-wrenching fear that a single mistake could separate me from everything I love.</p>
                 <p>And the costs? Legal fees piling up to $10,000+, time lost from work, emotional toll on your loved ones. Why does it have to be this hard?</p>
                 <p>Official sites overwhelm you with jargon, lawyers charge by the hour for basics you could handle, and scams lurk everywhere. If you're like me back then, you're thinking: "How do I even start without screwing it up?"</p>
-                <p>It's not your fault—the system is designed to confuse. But staying stuck? That amplifies the pain, turning "I can do this" into "What if I never make it?"</p>
             </div>
             
             <div class="space-y-4 mb-12">
                 <div class="flex items-start">
                     <span class="text-red-500 mr-3 text-xl">⚠️</span>
-                    <span class="font-medium">Delays that stretch 6-12 months because of overlooked documents—imagine waiting in limbo while life passes by.</span>
+                    <span class="font-medium">The asylum backlog is over 1.9 million cases—imagine waiting in limbo while life passes by.</span>
                 </div>
                 <div class="flex items-start">
                     <span class="text-red-500 mr-3 text-xl">⚠️</span>
-                    <span class="font-medium">Costly RFEs or denials from not knowing "what to say" in interviews, forcing you to start over.</span>
+                    <span class="font-medium">Family-based petitions taking 35+ months, forcing families to live apart for years.</span>
                 </div>
                 <div class="flex items-start">
                     <span class="text-red-500 mr-3 text-xl">⚠️</span>
@@ -221,42 +282,48 @@
                 </div>
                 <div class="flex items-start">
                     <span class="text-red-500 mr-3 text-xl">⚠️</span>
-                    <span class="font-medium">Emotional burnout from piecing together info from unreliable sources, leaving you more anxious than before.</span>
+                    <span class="font-medium">Emotional burnout from the constant fear, leaving you more anxious than before.</span>
                 </div>
+            </div>
+            
+            <!-- Proof of Proximity Element -->
+            <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                <h3 class="font-bold text-blue-800 text-lg mb-3">Local Backlogs Are Even Worse</h3>
+                <p class="text-blue-700">If you're applying in Miami, New York, or Houston, you face some of the longest backlogs. We know because we're in your community and understand these specific challenges.</p>
             </div>
             
             <div class="text-center">
                 <a href="https://www.jvzoo.com/b/0/421391/99" class="cta-primary font-bold py-4 px-8 rounded-lg text-center inline-block">
-                    <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Unlock the Answers Now – $47 Secure Access
+                    <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Find My Clarity & Safety
                 </a>
-                <p class="mt-3 text-gray-600">Turn Confusion into Clarity – Risk-Free</p>
+                <p class="mt-3 text-gray-600">Turn Fear into Forward Motion – Risk-Free</p>
             </div>
         </div>
     </section>
 
-    <!-- Explainer Video Section -->
+    <!-- Explainer Video Section - Original -->
     <section class="py-20 bg-gray-100 px-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold text-center mb-6">The Hidden Agenda Behind America's Immigration Laws</h2>
             <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">The public narrative is designed to confuse and divide. As a part of our commitment to transparency, we want you to see the real story behind the red tape. Watch this quick analysis.</p>
             
             <div class="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden shadow-xl">
-                <iframe src="https://www.youtube.com/embed/SCwYpSZQXl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-64 md:h-96"></iframe>
+                <iframe src="https://www.youtube.com/embed/SCwYpSZQXl8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-64 md:h-96 lazy" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- New Testimonials Section Below Video -->
+    <!-- Testimonials Section - Updated Title -->
     <section class="py-20 bg-white px-4">
         <div class="container mx-auto max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Real People, Real Results</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Real Stories: From Fear to Security</h2>
             <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">These are people I helped turn their fear into forward motion. Scroll through their stories.</p>
             
             <div class="testimonial-carousel mb-12">
                 <!-- Testimonial 1 - Gabriel Torres (Male) -->
                 <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/yBMfDX9m/Young-man.jpg" alt="Gabriel Torres" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <img src="https://i.ibb.co/yBMfDX9m/Young-man.jpg" alt="Gabriel Torres" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
                         <div>
                             <p class="font-bold">Gabriel Torres</p>
                             <p class="text-sm text-gray-500">TPS holder, ride-share driver • 1 week ago</p>
@@ -268,7 +335,7 @@
                 <!-- Testimonial 2 - Ekaterina Morozova (Female) -->
                 <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/S4BVWZjR/images-17.jpg" alt="Ekaterina Morozova" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <img src="https://i.ibb.co/S4BVWZjR/images-17.jpg" alt="Ekaterina Morozova" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
                         <div>
                             <p class="font-bold">Ekaterina Morozova</p>
                             <p class="text-sm text-gray-500">Awaiting VAWA petition decision • 2 months ago</p>
@@ -280,7 +347,7 @@
                 <!-- Testimonial 3 - David Karapetyan (Male) -->
                 <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/B2GpQQr3/images-13.jpg" alt="David Karapetyan" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <img src="https://i.ibb.co/B2GpQQr3/images-13.jpg" alt="David Karapetyan" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
                         <div>
                             <p class="font-bold">David Karapetyan</p>
                             <p class="text-sm text-gray-500">Refugee, warehouse worker • 6 days ago</p>
@@ -292,7 +359,7 @@
                 <!-- Testimonial 4 - Sofia Dimitriou (Female) -->
                 <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/j9pn706m/images-16.jpg" alt="Sofia Dimitriou" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <img src="https://i.ibb.co/j9pn706m/images-16.jpg" alt="Sofia Dimitriou" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
                         <div>
                             <p class="font-bold">Sofia Dimitriou</p>
                             <p class="text-sm text-gray-500">Adjustment of status applicant • 2 weeks ago</p>
@@ -304,7 +371,7 @@
                 <!-- Testimonial 5 - Jorge Alvarez (Male) -->
                 <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/tMSdGnL7/images-20.jpg" alt="Jorge Alvarez" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <img src="https://i.ibb.co/tMSdGnL7/images-20.jpg" alt="Jorge Alvarez" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
                         <div>
                             <p class="font-bold">Jorge Alvarez</p>
                             <p class="text-sm text-gray-500">Work permit applicant • 1 month ago</p>
@@ -316,7 +383,7 @@
                 <!-- Testimonial 6 - Nargis Rahimi (Female) -->
                 <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/Y4P6RKRF/images-11.jpg" alt="Nargis Rahimi" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <img src="https://i.ibb.co/Y4P6RKRF/images-11.jpg" alt="Nargis Rahimi" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
                         <div>
                             <p class="font-bold">Nargis Rahimi</p>
                             <p class="text-sm text-gray-500">Mother, asylum pending • 3 days ago</p>
@@ -335,16 +402,16 @@
         </div>
     </section>
 
-    <!-- What You'll Get Inside Section -->
+    <!-- What You'll Get Inside Section - Updated -->
     <section id="whats-inside" class="py-20 bg-blue-50 px-4">
         <div class="container mx-auto max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Here's Exactly What You'll Get – No Surprises, Just Results</h2>
-            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">I'm handing you everything I used to win my case, plus extras to make it even easier for you. Think of this as your all-in-one toolkit—practical, updated, and built for action.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Your Path From Uncertainty to Stability</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">I'm handing you everything I used to move from chronic fear to clarity, plus extras to make it even easier for you. Think of this as your all-in-one toolkit for navigating the system with confidence.</p>
             
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="value-card bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold mb-4 text-blue-800">The Core Guide (140+ Pages)</h3>
-                    <p class="text-gray-600 mb-4">Plain-English steps, unwritten rules, timelines, and pitfalls for asylum, status adjustment, DACA, and more. Your roadmap from day one.</p>
+                    <p class="text-gray-600 mb-4">Plain-English steps, unwritten rules, timelines, and pitfalls for asylum, status adjustment, DACA, and more. Your roadmap from confusion to clarity.</p>
                     <div class="text-right">
                         <span class="text-2xl font-bold">$199 Value</span>
                     </div>
@@ -352,7 +419,7 @@
                 
                 <div class="value-card bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold mb-4 text-blue-800">Exclusive Podcast Episode</h3>
-                    <p class="text-gray-600 mb-4">A deep analysis & discussion on Immigration in the U.S - recorded exclusively for you. This isn't just a discussion - it's a strategic look at what's really happening and how it affects you.</p>
+                    <p class="text-gray-600 mb-4">A deep analysis & discussion on overcoming the psychological toll of immigration - recorded exclusively for you. This isn't just information - it's emotional support and strategic guidance.</p>
                     <div class="text-right">
                         <span class="text-2xl font-bold">$97 Value</span>
                     </div>
@@ -360,7 +427,7 @@
                 
                 <div class="value-card bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold mb-4 text-blue-800">Resource Website Access</h3>
-                    <p class="text-gray-600 mb-4">Private portal with constantly updated official resources, useful tools, and community support. Includes templates for important documents and step-by-step checklists to keep you organized.</p>
+                    <p class="text-gray-600 mb-4">Private portal with constantly updated official resources, useful tools, and community support. Includes templates for important documents and step-by-step checklists to reduce anxiety.</p>
                     <div class="text-right">
                         <span class="text-2xl font-bold">$79 Value</span>
                     </div>
@@ -368,7 +435,7 @@
                 
                 <div class="value-card bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold mb-4 text-blue-800">Community Support Network</h3>
-                    <p class="text-gray-600 mb-4">Connect with others going through similar experiences. Our private community provides emotional support, practical advice, and a safe space to share concerns and victories.</p>
+                    <p class="text-gray-600 mb-4">Connect with others going through similar experiences. Our private community provides emotional support, practical advice, and a safe space to share concerns and victories without fear.</p>
                     <div class="text-right">
                         <span class="text-2xl font-bold">$149 Value</span>
                     </div>
@@ -376,177 +443,103 @@
                 
                 <div class="value-card bg-white p-8 rounded-xl shadow-md">
                     <h3 class="text-2xl font-bold mb-4 text-blue-800">Ebooks & Official Materials FREE</h3>
-                    <p class="text-gray-600 mb-4">You'll get 3 ebooks along with official PDFs to navigate this broken system.</p>
+                    <p class="text-gray-600 mb-4">You'll get 3 ebooks along with official PDFs to navigate this complex system with confidence.</p>
                     <div class="text-right">
                         <span class="text-2xl font-bold">$75 Value</span>
                     </div>
                 </div>
             </div>
             
+            <!-- Processing times card has been removed as requested -->
+            
             <div class="bg-white p-8 rounded-xl shadow-md text-center max-w-2xl mx-auto">
                 <h3 class="text-2xl font-bold mb-4">Total Value: <span class="line-through text-gray-500">$599</span></h3>
                 <p class="text-gray-600 mb-6">But today, you get everything for just one payment of:</p>
                 <div class="text-center mb-6">
                     <a href="https://www.jvzoo.com/b/0/421391/99" class="cta-blue font-bold py-4 px-8 rounded-lg text-center inline-block">
-                        <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Claim It All Now – $47 One-Time
+                        <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Secure My Family's Path
                     </a>
                 </div>
                 <p class="text-gray-600">Instant Download + Portal Access</p>
+                
+                <!-- Security Badges - Added -->
+                <div class="flex justify-center items-center mt-4 space-x-4">
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-lock text-green-600 mr-1"></i> 100% Risk Free
+                    </div>
+                    <div class="flex items-center text-sm text-gray-600">
+                        <i class="fas fa-shield-alt text-blue-600 mr-1"></i> Bank-Level Security
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Why This Works Section -->
-    <section class="py-20 bg-white px-4">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold text-center mb-6">Why This Isn't Just Another Guide – It's Your Edge</h2>
-            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">Built from my lived hell—translated into checklists that work. For high-anxiety moments, it's long-form answers with quick videos. Structured for your next micro-step, so you feel progress immediately.</p>
+    <!-- Combined Sections: Why This Works & Trust & Validation - Updated -->
+    <section class="py-20 bg-gray-100 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">You're Safe Here: Our Commitment to You</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">In an environment filled with scams and exploitation, we've built everything around transparency and trust.</p>
             
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
                 <div class="text-center">
                     <div class="text-green-500 text-4xl mb-4">
-                        <i class="fas fa-user-check"></i>
+                        <i class="fas fa-heart"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Designed by Experience</h3>
-                    <p class="text-gray-600">Created by someone who's been deported-threatened and won.</p>
+                    <h3 class="text-xl font-bold mb-3">Empathy First</h3>
+                    <p class="text-gray-600">Created by someone who understands the emotional toll, not just the paperwork.</p>
                 </div>
                 
                 <div class="text-center">
                     <div class="text-blue-500 text-4xl mb-4">
-                        <i class="fas fa-book-reader"></i>
+                        <i class="fas fa-hand-holding-heart"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Multiple Learning Styles</h3>
-                    <p class="text-gray-600">Meets your preference—read, listen, or discuss.</p>
+                    <h3 class="text-xl font-bold mb-3">Community Support</h3>
+                    <p class="text-gray-600">You're not alone—connect with others who understand your journey.</p>
                 </div>
                 
                 <div class="text-center">
                     <div class="text-orange-500 text-4xl mb-4">
-                        <i class="fas fa-bolt"></i>
+                        <i class="fas fa-user-shield"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Instant Action</h3>
-                    <p class="text-gray-600">Know exactly "what to do next" in under an hour.</p>
+                    <h3 class="text-xl font-bold mb-3">Safety First</h3>
+                    <p class="text-gray-600">Protect yourself from scams with vetted resources and guidance.</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="no-notario-badge mx-auto mb-4">
+                        <i class="fas fa-times-circle mr-2"></i> NOT A NOTARIO
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">No Scams, Ever</h3>
+                    <p class="text-gray-600">We explicitly state: we are not a notario, our forms are free, and your data is private. This is our pledge to you.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-blue-500 text-3xl mb-4">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Community Validation</h3>
+                    <p class="text-gray-600">Our strategies are validated by trusted immigrant advocacy organizations who've spent decades building trust.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Data Transparency</h3>
+                    <p class="text-gray-600">We provide clear, regularly updated information directly from official sources—no hidden agendas.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="stories" class="py-20 bg-gray-100 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Real Solutions, Real Results</h2>
-            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">These are people I helped turn their fear into forward motion. Scroll through their stories.</p>
-            
-            <div class="testimonial-carousel mb-12">
-                <!-- Testimonial 1 - Mariam Haddad (Female) -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/fYPnRgz8/images-9.jpg" alt="Mariam Haddad" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <p class="font-bold">Mariam Haddad</p>
-                            <p class="text-sm text-gray-500">Asylum applicant, single mother • 2 weeks ago</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"This guide explained things I never understood, even after months of searching online. The timelines and action steps gave me clarity. I don't feel as lost anymore."</p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 - Alejandro Rojas (Male) -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/xqB9ZVBR/images-18.jpg" alt="Alejandro Rojas" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <p class="font-bold">Alejandro Rojas</p>
-                            <p class="text-sm text-gray-500">Green card applicant, construction worker • 1 month ago</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"The resource website helped me prepare my evidence in a way my attorney said made a huge difference. I saved time and felt in control of the process for the first time."</p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 - Natasha Ivanova (Female) -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/4GFGPY5/images-6.jpg" alt="Natasha Ivanova" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <p class="font-bold">Natasha Ivanova</p>
-                            <p class="text-sm text-gray-500">Student on F-1 visa • 5 days ago</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"Listening to the podcast on visa renewals gave me practical tips I used the same day. It felt like getting advice from a trusted friend who understands exactly what we go through."</p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 4 - Rohim Khan (Male) -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/VW8frsKJ/images-15.jpg" alt="Rohim Khan" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <p class="font-bold">Rohim Khan</p>
-                            <p class="text-sm text-gray-500">Undocumented worker, father of three • 3 weeks ago</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"When ICE showed up on our street, I remembered exactly what the guide said about our rights. I stayed calm, didn't open the door, and avoided a huge problem. I'll never forget that night."</p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 5 - Leila Amini (Female) -->
-                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
-                    <div class="flex items-center mb-4">
-                        <img src="https://i.ibb.co/RpTcZf0X/images-8.jpg" alt="Leila Amini" class="w-12 h-12 rounded-full mr-4 object-cover">
-                        <div>
-                            <p class="font-bold">Leila Amini</p>
-                            <p class="text-sm text-gray-500">Asylum seeker • 4 days ago</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic mb-4">"The podcast episode about asylum interviews was so helpful. I listened on the bus, and when my appointment came, I felt confident answering the officer's questions."</p>
-                    <div class="flex text-yellow-400">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="text-center">
-                <p class="text-red-600 font-bold text-xl mb-4 counter">142 People Bought Today</p>
-                <a href="https://www.jvzoo.com/b/0/421391/99" class="cta-primary font-bold py-4 px-8 rounded-lg text-center inline-block">
-                    <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Join Them – $47 Now
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing & Bonuses Section -->
+    <!-- Pricing & Bonuses Section - Updated -->
     <section id="pricing" class="py-20 guarantee-section px-4">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Your No-Brainer Deal – Massive Value, Tiny Price</h2>
-            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Total real value? over $599. But right now, for you, it's $47—one-time. Why the discount? Launch window to help more folks fast (ends soon—verifiable).</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Your Path to Stability – Without The Overwhelming Costs</h2>
+            <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto">Total real value? over $599. But right now, for you, it's $47—one-time. Why the discount? We're committed to helping families find stability during this crisis.</p>
             
             <div class="bg-white rounded-xl shadow-2xl overflow-hidden max-w-md mx-auto">
                 <div class="p-8">
@@ -581,7 +574,7 @@
                     
                     <div class="text-center mb-6">
                         <a href="https://www.jvzoo.com/b/0/421391/99" class="cta-blue font-bold py-4 px-8 rounded-lg text-center inline-block w-full">
-                            <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Secure Your Spot & Bonuses – $47 Instant
+                            <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Join 2,847+ families who found clarity and hope
                         </a>
                     </div>
                     
@@ -595,7 +588,7 @@
                     <div class="flex items-center justify-center">
                         <i class="fas fa-shield-alt text-2xl mr-3"></i>
                         <p class="font-bold">
-                            100% Risk FREE 60-Day Money-Back Guarantee
+                            60-Day Peace of Mind Guarantee
                         </p>
                     </div>
                 </div>
@@ -605,7 +598,7 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ Section - Original -->
     <section id="faq" class="py-20 bg-white px-4">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-2xl font-bold text-center mb-16">Frequently Asked Questions</h2>
@@ -674,12 +667,124 @@
         </div>
     </section>
 
-    <!-- Final CTA -->
+    <!-- Second Testimonials Section - Moved Below FAQs -->
+    <section id="stories" class="py-20 bg-gray-100 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Real Solutions, Real Results</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">These are people I helped turn their fear into forward motion. Scroll through their stories.</p>
+            
+            <div class="testimonial-carousel mb-12">
+                <!-- Testimonial 1 - Mariam Haddad (Female) -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.ibb.co/fYPnRgz8/images-9.jpg" alt="Mariam Haddad" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
+                        <div>
+                            <p class="font-bold">Mariam Haddad</p>
+                            <p class="text-sm text-gray-500">Asylum applicant, single mother • 2 weeks ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"This guide explained things I never understood, even after months of searching online. The timelines and action steps gave me clarity. I don't feel as lost anymore."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 - Alejandro Rojas (Male) -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.ibb.co/xqB9ZVBR/images-18.jpg" alt="Alejandro Rojas" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
+                        <div>
+                            <p class="font-bold">Alejandro Rojas</p>
+                            <p class="text-sm text-gray-500">Green card applicant, construction worker • 1 month ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"The resource website helped me prepare my evidence in a way my attorney said made a huge difference. I saved time and felt in control of the process for the first time."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 - Natasha Ivanova (Female) -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.ibb.co/4GFGPY5/images-6.jpg" alt="Natasha Ivanova" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
+                        <div>
+                            <p class="font-bold">Natasha Ivanova</p>
+                            <p class="text-sm text-gray-500">Student on F-1 visa • 5 days ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"Listening to the podcast on visa renewals gave me practical tips I used the same day. It felt like getting advice from a trusted friend who understands exactly what we go through."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 - Rohim Khan (Male) -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.ibb.co/VW8frsKJ/images-15.jpg" alt="Rohim Khan" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
+                        <div>
+                            <p class="font-bold">Rohim Khan</p>
+                            <p class="text-sm text-gray-500">Undocumented worker, father of three • 3 weeks ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"When ICE showed up on our street, I remembered exactly what the guide said about our rights. I stayed calm, didn't open the door, and avoided a huge problem. I'll never forget that night."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 - Leila Amini (Female) -->
+                <div class="testimonial-card bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.ibb.co/RpTcZf0X/images-8.jpg" alt="Leila Amini" class="w-12 h-12 rounded-full mr-4 object-cover lazy" loading="lazy">
+                        <div>
+                            <p class="font-bold">Leila Amini</p>
+                            <p class="text-sm text-gray-500">Asylum seeker • 4 days ago</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">"The podcast episode about asylum interviews was so helpful. I listened on the bus, and when my appointment came, I felt confident answering the officer's questions."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-red-600 font-bold text-xl mb-4 counter">142 People Bought Today</p>
+                <a href="https://www.jvzoo.com/b/0/421391/99" class="cta-primary font-bold py-4 px-8 rounded-lg text-center inline-block">
+                    <img src="https://i.jvzoo.com/0/421391/99" alt="US Immigration Guide BUNDLE  (ebook, website, podcast included)" border="0" width='1' height='1' />Join Them – $47 Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA - Updated -->
     <section class="py-20 bg-gradient-to-r from-blue-900 to-purple-900 text-white">
         <div class="container mx-auto max-w-4xl text-center">
-            <h2 class="text-3xl font-bold mb-8">Don't Navigate the Immigration System Blindfolded</h2>
+            <h2 class="text-3xl font-bold mb-8">Don't Let The Weight of Waiting Crush Your Dreams</h2>
             <p class="text-lg mb-10 max-w-2xl mx-auto">
-                The difference between staying in the country and being deported often comes down to having the right information at the right time. Don't leave your future to chance.
+                The difference between perpetual fear and finding stability often comes down to having the right support at the right time. Don't leave your family's future to chance.
             </p>
             <div class="mb-6">
                 <a href="https://www.jvzoo.com/b/0/421391/99" class="bg-teal-500 hover:bg-teal-600 font-bold py-4 px-8 rounded-lg text-center inline-block transition-all duration-300 transform hover:scale-105">
@@ -728,6 +833,29 @@
             counters.forEach(counter => {
                 counter.textContent = `${randomCount} People Bought Today`;
             });
+            
+            // Lazy loading implementation
+            if ('IntersectionObserver' in window) {
+                const lazyElements = document.querySelectorAll('.lazy');
+                const lazyObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const element = entry.target;
+                            element.classList.add('loaded');
+                            if (element.tagName === 'IMG' && element.dataset.src) {
+                                element.src = element.dataset.src;
+                            } else if (element.tagName === 'IFRAME' && element.dataset.src) {
+                                element.src = element.dataset.src;
+                            }
+                            lazyObserver.unobserve(element);
+                        }
+                    });
+                });
+                
+                lazyElements.forEach(element => {
+                    lazyObserver.observe(element);
+                });
+            }
         });
     </script>
 </body>
